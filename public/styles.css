@@ -1,0 +1,298 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PoppinsBold", sans-serif;
+    color: white;
+}
+
+body {
+    background: url('/assets/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+    font-family: "PoppinsBold", sans-serif;
+    font-weight: 900;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    margin-top: -7%;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    margin-top: -2%;
+}
+
+.typewriter h2 {
+    overflow: hidden;
+    border-right: .15em solid rgb(255, 255, 255);
+    white-space: nowrap;
+    margin: 0 auto;
+    animation:
+        typing 2.5s steps(30, end),
+        blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(255, 255, 255);
+    }
+}
+
+@font-face {
+    font-family: "PoppinsBold";
+    src: url("/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+h1 {
+    font-family: "PoppinsBold", sans-serif;
+    font-weight: 900;
+    font-size: 6rem;
+    margin: 0%;
+}
+
+h2 {
+    font-family: "PoppinsBold", sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-top: 10%;
+}
+
+h3 {
+    color: rgb(197, 196, 196);
+    font-size: 1.1rem;
+    margin: 0%;
+    margin-top: -2%;
+}
+
+h4 {
+    margin-top: 0%;
+    color: rgb(197, 196, 196);
+    font-size: 1.1rem;
+    margin: 0%;
+}
+
+h5 {
+    color: rgb(197, 196, 196);
+    font-size: 1.2em;
+    margin: -3%;
+    margin-top: 2%;
+}
+
+h3:hover {
+    color: rgb(124, 123, 123);
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right {
+    text-align: right;
+    margin-right: 2.2rem;
+}
+
+.left {
+    text-align: left;
+    margin-left: 2.2rem;
+}
+
+.login {
+    font-family: "PoppinsBold", sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+a.text {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+form {
+    width: 500px;
+}
+
+form label {
+    font-size: 1.1em;
+    width: 100%;
+    /* Full width for label to align it to the left */
+    text-align: left;
+    /* Align text to the left */
+    margin-bottom: 0.5rem;
+}
+
+form input {
+    background-color: #ffffff;
+    padding: 2%;
+    padding-left: 4%;
+    width: 90%;
+    margin: 0.8rem;
+    font-family: "PoppinsBold", sans-serif;
+    font-weight: 900;
+    border-radius: 20em;
+    font-size: 1em;
+}
+
+form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(68, 23, 228);
+    border: none;
+    padding: 10px 20px;
+    width: 90%;
+    margin: 1rem auto;
+    font-family: "PoppinsBold", sans-serif;
+    font-weight: 900;
+    border-radius: 20em;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: rgb(27, 0, 124);
+}
+
+form button img.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+form button:hover {
+    background: rgb(24, 1, 107);
+}
+
+#messages {
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    height: 20em;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-container input[type='password'] {
+    padding-right: 30px; 
+    box-sizing: border-box; 
+  }
+  
+  .eye-icon {
+    position: absolute;
+    margin-left: -4%;
+    margin-top: 2%;
+    cursor: pointer;
+    width: 20px;
+  }
+  
+
+
+#messages li {
+    padding: 5px 10px;
+}
+
+#messages li:nth-child(odd) {
+    background: #eee;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-column {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 5em;
+        flex-basis: 100%;
+        padding: 10px;
+    }
+
+    .right-column {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        flex-basis: 100%;
+        padding: 10px;
+    }
+
+    .typewriter {
+        margin-left: .7em;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3,
+    h4,
+    h5 {
+        font-size: 1rem;
+    }
+}

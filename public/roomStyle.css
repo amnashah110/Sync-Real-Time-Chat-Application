@@ -1,0 +1,222 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PoppinsBold", sans-serif;
+    color: white;
+}
+
+body {
+    background: url('/assets/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+    font-family: "PoppinsBold", sans-serif;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+#logout-form {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#logout-btn {
+    background: rgb(68, 23, 228);
+    border: none;
+    padding: 10px 40px;
+    font-family: "PoppinsBold", sans-serif;
+    font-weight: 900;
+    border-radius: 20em;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+#logout-btn:hover {
+    background: rgb(27, 0, 124);
+}
+
+#chat-form {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+#header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 60%;
+}
+
+#chat-form input#m {
+    flex: 1;
+    padding: 1%;
+    padding-left: 2%;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    width: 90%;
+    font-family: "PoppinsBold", sans-serif;
+    font-weight: 900;
+    border-radius: 1em;
+    margin-right: 2%; 
+}
+
+form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(68, 23, 228);
+    border: none;
+    padding: 10px 20px;
+    width: 20%;
+    margin: 1rem auto;
+    font-family: "PoppinsBold", sans-serif;
+    font-weight: 900;
+    border-radius: 20em;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: rgb(27, 0, 124);
+}
+
+@font-face {
+    font-family: "PoppinsBold";
+    src: url("/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+h1 {
+    font-family: "PoppinsBold", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 0%;
+}
+
+h2 {
+    font-family: "PoppinsBold", sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+#messages { 
+    background: rgb(185, 185, 185);
+    list-style-type: none;
+    text-align: left;
+    width: 70%;
+    margin: 0;
+    padding-left: 10;
+    height: 20em;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 10px solid rgb(88, 88, 88);
+    border-top: 30px solid rgb(88, 88, 88);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 2px black, 0 0 0 4px black;
+    font-size: 1.2em;
+}
+
+#messages::-webkit-scrollbar {
+    width: 15px; 
+}
+
+#messages::-webkit-scrollbar-track {
+    background: rgb(133, 133, 133); /* Track background color */
+}
+
+#messages::-webkit-scrollbar-thumb {
+    background: rgb(24, 24, 24);
+}
+
+#messages::-webkit-scrollbar-thumb:hover {
+    background: rgb(17, 17, 17);
+}
+
+#messages li {
+    padding: 5px 10px; 
+}
+
+.margin-header {
+    margin-top: 5%;
+}
+
+.username {
+    color: #000000; 
+    font-weight: bold;
+}
+
+.message {
+    color: #001679; 
+}
+
+.user-status { 
+    color: rgb(58, 0, 0); 
+    font-weight: bold; 
+}
+
+.chat-message {
+    color: rgb(255, 255, 255); 
+    font-weight: bold; 
+}
+
+@media (max-width: 768px) {
+    .responsive-header {
+        font-size: 2em; 
+    }
+
+    .margin-header {
+        margin: 5%;
+        margin-top: 30%;
+    }
+
+    #header-container {
+        margin-top: 20px; 
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        margin-top: -10%;
+    }
+
+    form button {
+        padding: 5px 10px;
+        width: 25%;
+        font-family: "PoppinsBold", sans-serif;
+        font-weight: 900;
+        border-radius: 20em;
+        color: white;
+        font-size: 0.9rem;
+    }
+
+    h3,
+    h4,
+    h5 {
+        font-size: 1rem;
+    }
+
+    #chat-form input#m {
+        font-size: 0.9rem;
+        padding-left: 3%;
+    }
+
+    #chat-form {
+        width: 90%;
+    }
+
+    #messages {
+        width: 90%;
+        font-size: 0.9em;
+    }
+}
